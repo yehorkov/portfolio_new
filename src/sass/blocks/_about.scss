@@ -1,0 +1,14 @@
+.about {
+    margin-top: 75px;
+    height: 300px;
+    position: relative;
+    &__title {
+        text-align: center;
+        color: #fff;
+    }
+    &__descr {
+        margin-top: 50px;
+        text-align: center;
+        color: #fff;
+    }
+}
