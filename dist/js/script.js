@@ -42,5 +42,5 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	stars(500, ".promo");
 	stars(350, ".about");
-	stars(200, ".contacnts");
+	stars(200, ".contacts");
 });
