@@ -4,33 +4,19 @@ window.addEventListener("DOMContentLoaded", () => {
 	const closeElem = document.querySelector(".menu__close");
 	const menuList = document.querySelector(".menu__list");
 	const promoTitle = document.querySelector(".promo__title");
-	// const promo = document.querySelector('.promo');
-	// const about = document.querySelector('.about');
-	// const aboutLink = document.getElementById('about');
 
-	// aboutLink.addEventListener('click', () => {
-	//     about.classList.add('active');
-	//     promo.classList.remove('active');
-	// });
+	function toggleMenu() {
+		menu.classList.toggle("active");
+		hamburger.classList.toggle("hidden");
+	}
 
-	hamburger.addEventListener("click", () => {
-		menu.classList.add("active");
-		hamburger.classList.add("hidden");
-	});
-
-	closeElem.addEventListener("click", () => {
-		menu.classList.remove("active");
-		hamburger.classList.remove("hidden");
-	});
-
-	menuList.addEventListener("click", () => {
-		menu.classList.remove("active");
-		hamburger.classList.remove("hidden");
-	});
+	hamburger.addEventListener("click", toggleMenu);
+	closeElem.addEventListener("click", toggleMenu);
+	menuList.addEventListener("click", toggleMenu);
 
 	setTimeout(() => {
-		promoTitle.style.display = "block";
-	}, 1000);
+		promoTitle.classList.add("visible");
+	}, 1500);
 
 	function stars(count, selector) {
 		for (let i = 0; i < count; i++) {
