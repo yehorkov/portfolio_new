@@ -1,0 +1,43 @@
+.works {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+    border: 1px solid black;
+    &__title {
+        display: block;
+        // visibility: hidden;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 75px;
+        color: #fff;
+        z-index: 10;
+    }
+    &__descr {
+        margin-top: 50px;
+        text-align: center;
+        color: #fff;
+    }
+    &__wrapper {
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 300px;
+        height: 300px;
+        margin-right: 15px;
+        &-img {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+        }
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+    }
+    
+}
